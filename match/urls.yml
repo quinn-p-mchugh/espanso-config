@@ -1,0 +1,23 @@
+# Text expansions for common URLs.
+
+matches:
+  - trigger: "//drive"
+    force_clipboard: true
+    replace: "https://drive.google.com/drive/u/0/my-drive"
+
+  - trigger: "//github"
+    force_clipboard: true
+    replace: "https://github.com/quinn-p-mchugh/"
+
+  - trigger: "//website"
+    force_clipboard: true
+    replace: "{{website}}"
+
+  - trigger: "//gm"
+    force_clipboard: true
+    replace: "https://mail.google.com/mail/u/0/"
+
+  - trigger: "//meet"
+    replace: "https://meet.google.com/cjr-fmfi-oef"
+    
+  

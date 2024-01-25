@@ -1,0 +1,12 @@
+# Text expansions for common symbols.
+
+matches:
+  - trigger: ":micro" 
+    replace: "µ"
+
+  - trigger: ":plusmin" 
+    replace: "±"
+
+  - trigger: ":deg" 
+    replace: "°"
+    

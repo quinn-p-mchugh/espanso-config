@@ -1,0 +1,20 @@
+# Text expansions for searching Google and other search engines.
+#
+# @author Quinn McHugh
+# @website https://quinnmchugh.net
+
+matches:
+  - trigger: "$re"
+    replace: " site:reddit.com"
+
+  - trigger: "$so"
+    replace: " site:stackoverflow.com"
+
+  - trigger: "$gh"
+    replace: " site:github.com"
+
+  - trigger: "$gist"
+    replace: " site:gist.github.com"
+
+  - trigger: "$hn"
+    replace: " site:news.ycombinator.com"

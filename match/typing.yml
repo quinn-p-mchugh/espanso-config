@@ -1,0 +1,15 @@
+# Text expansions for common symbols.
+#
+# @author Quinn McHugh
+# @website https://quinnmchugh.net
+
+matches:
+
+  # Capitalise new sentence after period, question or exclamation mark
+  - regex: (?P<before>\w[.?!])\s(?P<firstchar>[a-z])(?P<therest>\w*\s) 
+    replace: "{{before}} {{capital}}{{therest}}"
+    vars:
+      - name: capital
+        type: shell
+        params:
+          cmd: "echo \"${ESPANSO_FIRSTCHAR^}\""

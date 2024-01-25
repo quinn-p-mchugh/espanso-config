@@ -1,0 +1,26 @@
+# Text expansions for selling things on Facebook Marketplace.
+
+# @author Quinn McHugh
+# @website https://quinnmchugh.net
+
+imports:
+  - "../personal.yml"
+
+matches:
+  - trigger: ":stillavail" 
+    form: |
+      Hi [[name]]!
+      
+      Yup, this item is still available.
+
+      Porch pickup. First come, first served.
+
+      Address is:
+      3208 Pearl St,
+      Philadelphia, PA 19104
+
+      https://maps.app.goo.gl/1gV8Q9h3VBZ2LJ3R9
+
+      Let me know when you plan on swinging by, so I can put it out on the porch.
+
+      :

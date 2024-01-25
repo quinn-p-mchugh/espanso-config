@@ -1,0 +1,55 @@
+# Text expansions for common abbreviations.
+#
+# @author Quinn McHugh
+# @website https://quinnmchugh.net
+
+matches:
+  - trigger: "ty" 
+    replace: "thank you"
+    propagate_case: true
+    word: true
+
+  - trigger: "thx" 
+    replace: "thanks"
+    propagate_case: true
+    word: false
+
+  - trigger: "lmk" 
+    replace: "let me know"
+    propagate_case: true
+    word: true
+
+  - trigger: "btw" 
+    replace: "by the way"
+    propagate_case: true
+    word: true
+
+  - trigger: "prod" 
+    replace: "product"
+    propagate_case: true
+    word: true
+
+  - trigger: "proj" 
+    replace: "project"
+    propagate_case: true
+    word: 
+
+  - trigger: "pwd" 
+    replace: "password"
+    propagate_case: true
+    word: true
+
+  - trigger: "ques"
+    replace: "question"
+    propagate_case: true
+    word: true
+
+  - trigger: "zk"
+    replace: "zettelkasten"
+    propagate_case: true
+    word: true
+    
+  - trigger: "hbd"
+    replace: "Happy birthday!!!"
+    propagate_case: true
+    word: true

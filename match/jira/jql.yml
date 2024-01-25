@@ -1,0 +1,12 @@
+# Text expansions for searching Jira issues using JQL.
+#
+# See Jira documentation for reference:
+#   - https://www.atlassian.com/blog/jira-software/jql-the-most-flexible-way-to-search-jira-14
+#   - https://support.atlassian.com/jira-software-cloud/docs/jql-functions/
+#
+# @author Quinn McHugh
+# @website https://quinnmchugh.net
+
+matches:
+  - trigger: ":lissue"
+    form: "issue in linkedIssues([[IssueKey]])"

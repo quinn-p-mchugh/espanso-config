@@ -1,0 +1,65 @@
+# Text expansions for months of the year.
+#
+# @author Quinn McHugh
+# @website https://quinnmchugh.net
+
+matches:
+  - trigger: "jan" 
+    replace: "january"
+    propagate_case: true
+    word: true
+
+  - trigger: "feb" 
+    replace: "february"
+    propagate_case: true
+    word: true
+
+  - trigger: "mar" 
+    replace: "march"
+    propagate_case: true
+    word: true
+
+  - trigger: "apr" 
+    replace: "april"
+    propagate_case: true
+    word: true
+    
+  - trigger: "may" 
+    replace: "may"
+    propagate_case: true
+    word: true
+
+  - trigger: "jun" 
+    replace: "june"
+    propagate_case: true
+    word: true
+
+  - trigger: "jul" 
+    replace: "july"
+    propagate_case: true
+    word: true
+
+  - trigger: "aug" 
+    replace: "august"
+    propagate_case: true
+    word: true
+
+  - trigger: "sep" 
+    replace: "september"
+    propagate_case: true
+    word: true
+
+  - trigger: "oct" 
+    replace: "october"
+    propagate_case: true
+    word: true
+
+  - trigger: "nov" 
+    replace: "november"
+    propagate_case: true
+    word: true
+    
+  - trigger: "dec" 
+    replace: "december"
+    propagate_case: true
+    word: true
