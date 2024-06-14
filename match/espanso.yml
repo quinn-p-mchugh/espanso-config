@@ -1,0 +1,11 @@
+# Text expansions for configuring Espanso.
+#
+# @author Quinn McHugh
+# @website https://quinnmchugh.net
+
+matches:
+  - trigger: ":trig" 
+    replace: |
+      - trigger: ""
+          replace: ""
+  

@@ -1,0 +1,17 @@
+# Text expansions for common symbols.
+# 
+# @author Quinn McHugh
+# @website https://quinnmchugh.net
+
+matches:
+  - trigger: ":micro"
+    replace: "µ"
+
+  - trigger: ":plusmin"
+    replace: "±"
+
+  - trigger: ":deg"
+    replace: "°"
+
+  - trigger: ":bt"
+    replace: "• "

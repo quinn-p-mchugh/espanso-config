@@ -1,0 +1,46 @@
+# Text expansions for adding callouts/admonitions to Zendesk Help Center articles.
+#
+# Code sourced from Lotus Themes: https://lotusthemes.zendesk.com/hc/en-us/articles/11652596589202-Callout-blocks
+#
+# @author Quinn McHugh
+# @website https://quinnmchugh.net/
+
+matches:
+  - trigger: ":dnote"
+    replace: |
+      :::note
+
+      $|$
+      
+      :::
+
+  - trigger: ":dinfo"
+    replace: |
+      :::info
+
+      $|$
+      
+      :::
+
+  - trigger: ":dtip"
+    replace: |
+      :::tip
+
+      $|$
+      
+      :::
+
+  - trigger: ":dwarning"
+      :::warning
+
+      $|$
+      
+      :::
+
+  - trigger: ":ddanger"
+    replace: |
+      :::danger
+      $|$
+      
+      :::
+

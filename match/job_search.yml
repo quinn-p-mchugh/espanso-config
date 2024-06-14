@@ -1,0 +1,61 @@
+# Text expansions related to job searching
+#
+# @author Quinn McHugh
+# @website https://quinnmchugh.net
+
+imports:
+  - "./sensitive_info.yml"
+
+matches:
+
+  # Recruiter / Job Inquiries
+  - trigger: ":recruiterno"
+    form: |
+      Hi [[Name]]!
+
+      Thank you for reaching out about the [[Role]] position in [[Location]]. I'm currently in an active job search and while this position doesn't seem to be well-aligned with my skills and experience, I'd be more than happy to chat more about other openings that are a better fit.
+
+      I'm currently exploring opportunities in the following areas:
+      • Project Management/Coordination
+      • Systems Analysis/Engineering
+      • Process Improvement Engineering
+      • Business Systems Management
+
+      You can find a PDF of my resume here:
+      {{resume_url}}
+
+      And my availability here:
+      {{booking_page}}
+
+  - trigger: ":recruiteryes"
+    form: |
+      Hi [[Name]]!
+
+      Thank you so much for reaching out about the [[Role]] position in [[Location]]. I'm currently in an active job search and would be excited to chat more about the role.
+
+      Please feel free to call me at {{phone_mobile}} - my general availability can be found here: {{booking_page}}
+      
+      I've attached a PDF of my resume to this message. You can find the most up-to-date version here: {{resume_url}}
+
+      Finally, if you happen to have additional details about the role, you're welcome to forward them to my email at {{email}}.
+
+      Looking forward to hearing from you regarding next steps!
+
+  # Rejection-Related Text Expansions
+  - trigger: ":rejection" # Follow up email to send after receiving rejection from organization / hiring manager
+    html: |
+      Hi {{form1.Name}},
+      <br><br>Thank you so much for reaching out and providing an update regarding the status of my application for the {{form1.Role}} role at {{form1.Organization]]. While it's disappointing to learn I won't be moving forward in the hiring process, I wish you the best in finding a great candidate to support {{form1.Organization}}'s current and future growth.
+      <br><br>If you'd be willing to share any feedback on how I can improve my candidacy for the future, I would be deeply appreciate your insight. Please feel free to responsd with a few quick bullet points or share your thoughts via my <a href="{{feedback_url}}" target="_blank" rel="noopener noreferrer">anonymous feedback form</a> - whichever you prefer.
+      <br><br>Finally, I'd love to stay connected on LinkedIn, should any future opportunities arise within The Energy Co-op or elsewhere - here's <a href="{{linkedin_url}}" target="_blank" rel="noopener noreferrer">my LinkedIn profile</a> for reference.
+      <br><br>Thank you again for your time and consideration. I wish you a successful hiring round!
+    vars:
+      - name: "form1" 
+        type: form 
+        params: 
+          layout: "Name: [[Name]] \nRole: [[Role]]\n Organization: [[Organization]]"
+
+  - trigger: ":lihmconnect" # Note to accompany a Linked connection request to the hiring manager after being rejected from a role.
+    form: |
+      Hi [[Name]], it was a pleasure discussing the [[Role]] role at [[Organization]] with you. I'd love to stay connected, should any future opportunities arise within The Energy Co-op or elsewhere.
+

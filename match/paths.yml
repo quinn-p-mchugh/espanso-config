@@ -1,0 +1,17 @@
+# Text expansions for paths.
+#
+# @author Quinn McHugh
+# @website https://quinnmchugh.net
+
+matches:
+  - trigger: "-org" 
+    replace: "600 Resources\\603 Organizations -org\\@"
+
+  - trigger: "-ppl" 
+    replace: "600 Resources\\602 People -ppl\\@"
+
+  - trigger: "-lit" 
+    replace: "600 Resources\\601 Literature -lit\\"
+
+  - trigger: "-int" 
+    replace: "600 Resources\\604 Interactions -int\\"

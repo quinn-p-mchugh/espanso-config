@@ -1,0 +1,11 @@
+# Text expansions for miscellaneous utilities.
+# 
+# @author Quinn McHugh
+# @website https://quinnmchugh.net
+
+matches:
+  - trigger: ":paste"
+    replace: "{{clipboard}}"
+    vars:
+      - name: "clipboard"
+        type: "clipboard"

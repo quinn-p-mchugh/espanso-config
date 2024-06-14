@@ -1,0 +1,13 @@
+# Text expansions for Readwise.
+#
+# @author Quinn McHugh
+# @website https://quinnmchugh.net
+
+matches:
+
+  # For use with Twitter/X
+  - trigger: ":rwsave" 
+    replace: "@readwise save"
+  - trigger: ":rwthread" 
+    replace: "@readwise save thread"
+  

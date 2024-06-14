@@ -1,0 +1,39 @@
+# Templates for use with Logseq
+#
+# @author Quinn McHugh
+# @website https://quinnmchugh.net
+
+matches:
+  - trigger: "lmeeting"
+    form: |
+      # Title
+      type:: [[event/meeting]]
+      relates-to:: 
+        - ## Prep
+          - 
+        - ## Attendees
+          - 
+        - ## Agenda
+          - 
+        - ## Notes
+          - 
+        - ## Next Steps
+          - 
+  
+  - trigger: "lpage"
+    form: |
+      alias:: 
+      tags:: 
+  
+  - trigger: "lperson"
+    replace: |
+      alias:: 
+      tags:: [[person]]
+      org:: 
+      role:: 
+  
+  - trigger: "lorg"
+    form: |
+      alias:: 
+      tags:: 
+      website:: 

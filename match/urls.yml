@@ -1,0 +1,27 @@
+# Text expansions for common URLs.
+# 
+# @author Quinn McHugh
+# @website https://quinnmchugh.net
+
+matches:
+  - trigger: "//drive"
+    force_clipboard: true
+    replace: "https://drive.google.com/drive/u/0/my-drive"
+
+  - trigger: "//github"
+    force_clipboard: true
+    replace: "{{github_url}}"
+
+  - trigger: "//website"
+    force_clipboard: true
+    replace: "{{website}}"
+
+  - trigger: "//gm"
+    force_clipboard: true
+    replace: "https://mail.google.com/mail/u/0/"
+
+  - trigger: "//meet"
+    replace: "{{google_meet_url}}"
+
+    
+  

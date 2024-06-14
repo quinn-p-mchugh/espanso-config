@@ -1,0 +1,15 @@
+# Logseq-related text expansions.
+#
+# @author Quinn McHugh
+# @website https://quinnmchugh.net
+
+matches:
+  - trigger: "warning" 
+    replace: "⚠️ **WARNING** - "
+    propagate_case: true
+    word: true
+    
+  - trigger: "DONT DO" 
+    replace: "# 🙅 NOT TO DO"
+    propagate_case: true
+    word: true

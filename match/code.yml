@@ -1,0 +1,8 @@
+# Text expansions for editing code.
+#
+# @author Quinn McHugh
+# @website https://quinnmchugh.net
+
+matches:
+  - trigger: ":cf"
+    replace: "```\n$|$\n```"

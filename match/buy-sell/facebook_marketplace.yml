@@ -1,0 +1,22 @@
+# Text expansions for selling things on Facebook Marketplace.
+
+# @author Quinn McHugh
+# @website https://quinnmchugh.net
+
+imports:
+  - "../sensitive_info.yml"
+
+matches:
+  - trigger: ":stillavail" 
+    form: |
+      Hi [[name]]!
+      
+      Yup, this item is still available.
+
+      Porch pickup. First come, first served.
+
+      Address is:
+      {{address}}
+      {{address_url}}
+
+      Let me know when you plan on swinging by, so I can put it out on the porch.

@@ -1,0 +1,122 @@
+# Text expansions for personal info. Actual values are located in ./sensitive_info.yml
+#
+# @author Quinn McHugh
+# @website https://quinnmchugh.net
+
+imports:
+  - "./sensitive_info.yml"
+
+matches:
+  - trigger: ":sig"
+    replace: |
+      All the best,
+      {{first_name}}
+      
+  - trigger: ":sig"
+    replace: |
+      Sincerely,
+      {{first_name}}
+
+  - trigger: ":bookme"
+    html: |
+      <a href="{{booking_page}}" target="_blank">{{booking_page}}</a>
+
+  # Copied from sensitive_info.yml
+  - trigger: ":fn"
+    replace: "{{first_name}}"
+      
+  - trigger: ":ln"
+    replace: "{{last_name}}"
+
+  - trigger: ":fulln"
+    replace: "{{full_name}}"
+
+  - trigger: ":pr"
+    replace: "{{pronouns}}"
+
+  - trigger: ":fullnpr"
+    replace: "{{full_name_pronouns}}"
+
+  - trigger: ":st"
+    replace: "{{street_address}}"
+
+  - trigger: ":city"
+    replace: "{{city}}"
+
+  - trigger: ":state"
+    replace: "{{state}}"
+
+  - trigger: ":stateabb"
+    replace: "{{state_abbreviation}}"
+
+  - trigger: ":zc"
+    replace: "{{zip_code}}"
+
+  - trigger: ":add"
+    replace: "{{address}}"
+
+  - trigger: ":addurl"
+    replace: "{{address_url}}"
+
+  - trigger: ":email"
+    replace: "{{email}}"
+
+  - trigger: ":emailw"
+    replace: "{{email_work}}"
+
+  - trigger: ":ph"
+    replace: "{{phone_mobile}}"
+
+  - trigger: ":bookpage"
+    replace: "{{booking_page}}"
+
+  - trigger: ":website"
+    replace: "{{website_url}}"
+
+  - trigger: ":zot"
+    replace: "{{library_url}}"
+
+  - trigger: ":resume"
+    replace: "{{resume_url}}"
+
+  - trigger: ":feedback"
+    replace: "{{feedback_url}}"
+
+  - trigger: ":li"
+    replace: "{{linkedin_url}}"
+
+  - trigger: ":fb"
+    replace: "{{facebook_url}}"
+
+  - trigger: ":twitter"
+    replace: "{{twitter_url}}"
+
+  - trigger: ":github"
+    replace: "{{github_url}}"
+
+  - trigger: ":instagram"
+    replace: "{{instagram_url}}"
+
+  - trigger: ":polarsteps"
+    replace: "{{polarsteps_url}}"
+
+  - trigger: ":gmeet"
+    replace: "{{google_meet_url}}"
+  
+  - trigger: ":jspost"
+    replace: "{{job_search_post}}"
+      
+  - trigger: ":role"
+    replace: "{{work_role}}"
+
+  - trigger: ":org"
+    replace: "{{work_organization}}"
+
+  - trigger: ":title"
+    replace: "{{work_title}}"
+
+  - trigger: ":dept"
+    replace: "{{work_dept}}"
+
+  - trigger: ":user_path"
+    replace: "{{user_path}}"

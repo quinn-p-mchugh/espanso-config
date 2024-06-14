@@ -1,0 +1,8 @@
+# HTML-related expansions.
+#
+# @author Quinn McHugh
+# @website https://quinnmchugh.net
+
+matches:
+  - trigger: ":url"
+    form: '<a href="[[url]]" target="_blank" rel="noopener noreferrer">[[text]]$|$</a>'

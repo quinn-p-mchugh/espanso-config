@@ -1,0 +1,15 @@
+# Text expansions for common replies, in email, Slack, etc.
+#
+# @author Quinn McHugh
+# @website https://quinnmchugh.net
+
+matches:
+
+  # Email
+  - trigger: ":fup" 
+    replace: "Just wanted to follow up on this in case it slipped by your inbox."
+    
+  # Slack
+  - trigger: ":welcome" 
+    replace: "Welcome [[name]]! :tada::tada::tada: Great to have you on board. :slightly_smiling_face:"
+  

@@ -1,0 +1,69 @@
+# Configuration file for prompts to use with ChatGPT, Bard, and other LLMs.
+#
+# @author Quinn McHugh
+# @website https://quinnmchugh.net
+
+matches:
+  - trigger: ":ankigpt"
+    replace: |
+      I want you to act as a professional Anki card creator, able to create Anki cards from the text I provide.
+
+      Regarding the formulation of the card content, you stick to two principles: First, minimum information principle: The material you learn must be formulated in as simple way as it is only possible. Simplicity does not have to imply losing information and skipping the difficult part.b Second, optimize wording: The wording of your items must be optimized to make sure that in minimum time the right bulb in your brain lights up. This will reduce error rates, increase specificity, reduce response time, and help your concentration.
+
+      The following is a model card-create template for you to study.
+
+      Text: The characteristics of the Dead Sea.
+      Answer: Salt lake located on the border between Israel and Jordan. Its shoreline is the lowest point on the Earth's surface, averaging 396 m below sea level. It is 74 km long. It is seven times as salty (30% by volume) as the ocean. Its density keeps swimmers afloat. Only simple organisms can live in its saline waters
+
+      Create cards based on the above text as follows:
+
+      Question: Where is the Dead Sea located? Answer: on the border between Israel and Jordan Question: What is the lowest point on the Earth's surface? 
+      Answer: The Dead Sea shoreline Question: What is the average level on which the Dead Sea is located? Answer: 400 meters (below sea level) 
+      Question: How long is the Dead Sea? Answer: 70 km Question: How much saltier is the Dead Sea as compared with the oceans? 
+      Answer: 7 times Question: What is the volume content of salt in the Dead Sea? Answer: 30% 
+      Question: Why can the Dead Sea keep swimmers afloat? 
+      Answer: due to high salt content Question: Why is the Dead Sea called Dead? Answer: because only simple organisms can live in it 
+      Question: Why only simple organisms can live in the Dead Sea? 
+      Answer: because of high salt content
+
+      Please output the cards you create as markdown tables. If you have mastered, please reply "I have learned how to create cards, please provide me with the text".
+
+  - trigger: ":summarize"
+    replace: |
+      {{output}}
+
+      {{clipboard}}
+    vars:
+      - name: output
+        type: choice
+        params:
+          values:
+            - |-
+              TL;DR:
+
+              $|$
+            - ""
+      - name: "clipboard"
+        type: "clipboard"
+
+  - trigger: ":gptemoji"
+    replace: |
+      You are a professional emoji picker, responsible for giving me several emoji ideas for the following description:
+
+      $|$
+
+  - trigger: ":meetsummary"
+    replace: |
+      ChatGPT, from this point forward, do not respond to any of my prompts unless I precede them with 'respond now'. Please exclude all fluff, disclaimers, and warnings in your responses. Strictly adhere to this behavior until instructed otherwise. Additionally, I require you to summarize the following transcript, incorporating details about attendees, key topics, action items, and next steps.
+
+  - trigger: ":gptsocial"
+    replace: |
+      I want you to act as a social media manager. You will craft engaging, though-provoking, and highly shareable social media posts for various platforms, such as LinkedIn, Twitter, and Mastodon. Each post you create should provide a positive impression. Please create several post options, based on the following content:
+
+  - trigger: ":gptcoverletter"
+    replace: |
+      Imagine you're a professional cover letter writing assistant. I want you to generate cover letters based on your knowledge and the attached resume.
+
+      Rules you should follow:
+      1. Knowledge with "example" in the file name should only be used as inspiration for prose, grammar, tone, and cohesion.
+      2. Files with "Quinn.McHugh" in the file name contains content of previously written cover letters. You should emulate the voice of these cover letters and are encouraged to utilize the language and content contained in these files.

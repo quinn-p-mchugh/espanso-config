@@ -1,0 +1,11 @@
+# Text expansions for use with Shortwave - https://shortwave.com/.
+#
+# @author Quinn McHugh
+# @website https://quinnmchugh.net
+
+matches:
+  - trigger: ":meetupnetworking"
+    replace: "What kinds of networking opportunities are contained within these events?"
+    
+  - trigger: ":slackjobs"
+    replace: "Within these Slack messages, what are all the job opportunities available? Group them by type please."

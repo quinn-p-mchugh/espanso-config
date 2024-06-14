@@ -1,0 +1,16 @@
+# Text expansions for use with Jinja templates
+#
+# Jinja documentation: https://jinja.palletsprojects.com
+#
+# @author Quinn McHugh
+# @website https://quinnmchugh.net
+
+matches:
+  - trigger: ":raw"
+    replace: "{% raw %}$|${% endraw %}"
+    
+  - trigger: ":wraw" # Wrap raw tags around clipboard content
+    replace: "{% raw %}{{ clipboard }}{% endraw %}"
+    vars:
+      - name: "clipboard"
+        type: "clipboard"

@@ -1,0 +1,34 @@
+# Text expansions related to dates and times.
+#
+# @author Quinn McHugh
+# @website https://quinnmchugh.net
+
+global_vars:
+  - name: dateiso 
+    type: date
+    params:
+      format: "%Y-%m-%d"
+
+  - name: time
+    type: date
+    params:
+      format: "%H:%M"
+
+  - name: datetimeiso
+    type: date
+    params:
+      format: "%+"
+
+matches:
+  - trigger: ":today"
+    replace: "{{dateiso}}"
+    
+  - trigger: ":datetimeiso"
+    replace: "{{datetimeiso}}"
+  
+  # Useful for writing timestamped meeting notes
+  - trigger: ":tm"
+    replace: "{{time}} - $|$"
+  
+  - trigger: ".tm"
+    replace: "**{{time}}** - $|$"
