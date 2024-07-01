@@ -57,5 +57,5 @@ matches:
 
   - trigger: ":lihmconnect" # Note to accompany a Linked connection request to the hiring manager after being rejected from a role.
     form: |
-      Hi [[Name]], it was a pleasure discussing the [[Role]] role at [[Organization]] with you. I'd love to stay connected, should any future opportunities arise within The Energy Co-op or elsewhere.
+      Hi [[Name]], it was a pleasure discussing the [[Role]] role at [[Organization]] with you. I'd love to stay connected, should any future opportunities arise within [[Organization]] or elsewhere.
 
