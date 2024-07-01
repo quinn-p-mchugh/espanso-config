@@ -55,6 +55,20 @@ matches:
         params: 
           layout: "Name: [[Name]] \nRole: [[Role]]\n Organization: [[Organization]]"
 
+  - trigger: ":rejectfu" # Follow up email to send after receiving rejection from organization / hiring manager
+    html: |
+      Hi {{form1.Name}},
+      <br><br>I wanted to follow up here in case my previous message slipped by your inbox. If you're not able to share feedback regarding my candidacy, no worries at all - I completely understand your position.
+      <br><br>In any case, still happy to connect on <a href="{{linkedin_url}}" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
+      <br><br>I hope you've since moved forward with a strong set of candidates for the Operations Manager role and the new hire ends up being a great addition to the team.
+
+      Take care!
+    vars:
+      - name: "form1" 
+        type: form 
+        params: 
+          layout: "Name: [[Name]]"
+
   - trigger: ":lihmconnect" # Note to accompany a Linked connection request to the hiring manager after being rejected from a role.
     form: |
       Hi [[Name]], it was a pleasure discussing the [[Role]] role at [[Organization]] with you. I'd love to stay connected, should any future opportunities arise within [[Organization]] or elsewhere.
