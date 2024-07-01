@@ -19,7 +19,7 @@ matches:
 
   - trigger: ":bookme"
     html: |
-      <a href="{{booking_page}}" target="_blank">{{booking_page}}</a>
+      <a href="{{booking_page}}" target="_blank" rel="noopener noreferrer">{{booking_page}}</a>
 
   # Copied from sensitive_info.yml
   - trigger: ":fn"
