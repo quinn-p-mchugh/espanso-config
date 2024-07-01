@@ -45,10 +45,10 @@ matches:
   - trigger: ":rejection" # Follow up email to send after receiving rejection from organization / hiring manager
     html: |
       Hi {{form1.Name}},
-      <br><br>Thank you so much for reaching out and providing an update regarding the status of my application for the {{form1.Role}} role at {{form1.Organization]]. While it's disappointing to learn I won't be moving forward in the hiring process, I wish you the best in finding a great candidate to support {{form1.Organization}}'s current and future growth.
-      <br><br>If you'd be willing to share any feedback on how I can improve my candidacy for the future, I would be deeply appreciate your insight. Please feel free to responsd with a few quick bullet points or share your thoughts via my <a href="{{feedback_url}}" target="_blank" rel="noopener noreferrer">anonymous feedback form</a> - whichever you prefer.
-      <br><br>Finally, I'd love to stay connected on LinkedIn, should any future opportunities arise within The Energy Co-op or elsewhere - here's <a href="{{linkedin_url}}" target="_blank" rel="noopener noreferrer">my LinkedIn profile</a> for reference.
-      <br><br>Thank you again for your time and consideration. I wish you a successful hiring round!
+      <br><br>Thank you so much for reaching out and providing an update regarding my application for the {{form1.Role}} role at {{form1.Organization]]. While it's disappointing to learn I won't be moving forward in the hiring process, I wish you the best in finding a great candidate to support {{form1.Organization}}'s growth.
+      <br><br>One tiny request: I'm looking for feedback on how I can improve my candidacy for the future and would be deeply value your insight. Would you be willing to help me by replying with a few quick thoughts on my application? You're also welcome to share via my <a href="{{feedback_url}}" target="_blank" rel="noopener noreferrer">anonymous feedback form</a> - whichever your prefer. Thank you for any insight you're able to provide!
+      <br><br>Finally, I'd love to stay connected with you on LinkedIn, should any future opportunities arise within {{form1.Organization}} or elsewhere - here's <a href="{{linkedin_url}}" target="_blank" rel="noopener noreferrer">my LinkedIn profile</a> for reference.
+      <br><br>Thank you again, {{form1.Name}}, for your time and consideration - I wish you all the best this hiring round and beyond!
     vars:
       - name: "form1" 
         type: form 
