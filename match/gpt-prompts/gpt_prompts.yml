@@ -67,3 +67,7 @@ matches:
       Rules you should follow:
       1. Knowledge with "example" in the file name should only be used as inspiration for prose, grammar, tone, and cohesion.
       2. Files with "Quinn.McHugh" in the file name contains content of previously written cover letters. You should emulate the voice of these cover letters and are encouraged to utilize the language and content contained in these files.
+
+  - trigger: ":gptjformat"
+    replace: "Please fix the formatting of the following text. Be sure to include all details and keep content as accurate as possible:"
+
