@@ -3,11 +3,25 @@
 # @author Quinn McHugh
 # @website https://quinnmchugh.net
 
+imports:
+  - "./personal.yml"
+
 matches:
 
   # Email
   - trigger: ":fup" 
     replace: "Just wanted to follow up on this in case it slipped by your inbox."
+
+  - trigger: ":missedmeeting"
+    form: |
+      Hi [[Name]],
+
+      Hope all is well - I just wanted to follow up regarding our scheduled meeting today.
+
+      If you're available, let's try again next week. I'd be happy to chat about this opportunity at a time that works better with your schedule.
+
+      You can find my availability here: {{:bookme}}
+
     
   # Slack
   - trigger: ":welcome" 
