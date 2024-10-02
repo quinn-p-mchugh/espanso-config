@@ -9,9 +9,9 @@ matches:
     replace: |
       I want you to act as a professional Anki card creator, able to create Anki cards from the text I provide.
 
-      Regarding the formulation of the card content, you stick to two principles: First, minimum information principle: The material you learn must be formulated in as simple way as it is only possible. Simplicity does not have to imply losing information and skipping the difficult part.b Second, optimize wording: The wording of your items must be optimized to make sure that in minimum time the right bulb in your brain lights up. This will reduce error rates, increase specificity, reduce response time, and help your concentration.
+      Regarding the formulation of the card content, you stick to two principles: First, minimum information principle: The material you learn must be formulated in as simple way as it is only possible. Simplicity does not have to imply losing information and skipping the difficult part. Second, optimize wording: The wording of your items must be optimized to make sure that in minimum time the right bulb in your brain lights up. This will reduce error rates, increase specificity, reduce response time, and help your concentration.
 
-      The following is a model card-create template for you to study.
+      The following is a model card creation template for you to study.
 
       Text: The characteristics of the Dead Sea.
       Answer: Salt lake located on the border between Israel and Jordan. Its shoreline is the lowest point on the Earth's surface, averaging 396 m below sea level. It is 74 km long. It is seven times as salty (30% by volume) as the ocean. Its density keeps swimmers afloat. Only simple organisms can live in its saline waters
@@ -77,4 +77,34 @@ matches:
   - label: ""
     trigger: ":gptjformat"
     replace: "Please fix the formatting of the following text. Be sure to include all details and keep content as accurate as possible:"
+
+  - label: ""
+    trigger: ":gptengineer"
+    replace: |
+      I want you to become my Expert Prompt Creator. The objective is to assist me in creating the most effective prompts to be used with ChatGPT. The generated prompt should be in the first person (me), as if I were directly requesting a response from ChatGPT (a GPT3.5/GPT4 interface). Your response will be in the following format: 
+
+      "
+      **Prompt:**
+      >{Provide the best possible prompt according to my request. There are no restrictions to the length of the prompt. Utilize your knowledge of prompt creation techniques to craft an expert prompt. Don't assume any details, we'll add to the prompt as we go along. Frame the prompt as a request for a response from ChatGPT. An example would be "You will act as an expert physicist to help me understand the nature of the universe...". Make this section stand out using '>' Markdown formatting. Don't add additional quotation marks.}
+
+      **Possible Additions:**
+      {Create three possible additions to incorporate directly in the prompt. These should be additions to expand the details of the prompt. Options will be very concise and listed using uppercase-alpha. Always update with new Additions after every response.}
+
+      **Questions:**
+      {Frame three questions that seek additional information from me to further refine the prompt. If certain areas of the prompt require further detail or clarity, use these questions to gain the necessary information. I am not required to answer all questions.}
+      "
+
+      Instructions: After sections Prompt, Possible Additions, and Questions are generated, I will respond with my chosen additions and answers to the questions. Incorporate my responses directly into the prompt wording in the next iteration. We will continue this iterative process with me providing additional information to you and you updating the prompt until the prompt is perfected. Be thoughtful and imaginative while crafting the prompt. At the end of each response, provide concise instructions on the next steps. 
+
+      Before we start the process, first provide a greeting and ask me what the prompt should be about. Don't display the sections on this first response.
+
+  - label: ""
+    trigger: ":gptinterviewer"
+    form: |
+      Act as an expert interviewing professional. Based on the job description I will provide below for the role of [[Role]] for [[Organization]], generate a set of comprehensive interview questions that I can use to prepare for an interview as a candidate. The questions should cover various aspects of the role, including responsibilities, required skills, and qualifications. Ensure that the questions are designed to help me understand the expectations of the role and how I can effectively address them during the interview. The questions should be mixed in format, including situational, behavioral, and technical aspects, without focusing on any specific format.
+
+      [[Job Description]]
+
+
+
 
