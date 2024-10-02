@@ -6,10 +6,12 @@
 # @website https://quinnmchugh.net
 
 matches:
-  - trigger: ":raw"
+  - label: ""
+    trigger: ":raw"
     replace: "{% raw %}$|${% endraw %}"
     
-  - trigger: ":wraw" # Wrap raw tags around clipboard content
+  - label: ""
+    trigger: ":wraw" # Wrap raw tags around clipboard content
     replace: "{% raw %}{{ clipboard }}{% endraw %}"
     vars:
       - name: "clipboard"

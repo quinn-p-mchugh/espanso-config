@@ -4,5 +4,6 @@
 # @website https://quinnmchugh.net
 
 matches:
-  - trigger: ":url"
+  - label: ""
+    trigger: ":url"
     form: '<a href="[[url]]" target="_blank" rel="noopener noreferrer">[[text]]$|$</a>'

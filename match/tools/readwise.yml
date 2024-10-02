@@ -6,8 +6,11 @@
 matches:
 
   # For use with Twitter/X
-  - trigger: ":rwsave" 
+  - label: ""
+    trigger: ":rwsave" 
     replace: "@readwise save"
-  - trigger: ":rwthread" 
+    
+  - label: ""
+    trigger: ":rwthread" 
     replace: "@readwise save thread"
   

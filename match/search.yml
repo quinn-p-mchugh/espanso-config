@@ -4,17 +4,22 @@
 # @website https://quinnmchugh.net
 
 matches:
-  - trigger: "$re"
+  - label: ""
+    trigger: "$re"
     replace: " site:reddit.com"
 
-  - trigger: "$so"
+  - label: ""
+    trigger: "$so"
     replace: " site:stackoverflow.com"
 
-  - trigger: "$gh"
+  - label: ""
+    trigger: "$gh"
     replace: " site:github.com"
 
-  - trigger: "$gist"
+  - label: ""
+    trigger: "$gist"
     replace: " site:gist.github.com"
 
-  - trigger: "$hn"
+  - label: ""
+    trigger: "$hn"
     replace: " site:news.ycombinator.com"

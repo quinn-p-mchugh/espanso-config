@@ -4,7 +4,8 @@
 # @website https://quinnmchugh.net
 
 matches:
-  - trigger: "lmeeting"
+  - label: ""
+    trigger: "lmeeting"
     form: |
       # Title
       type:: [[event/meeting]]
@@ -20,19 +21,22 @@ matches:
         - ## Next Steps
           - 
   
-  - trigger: "lpage"
+  - label: ""
+    trigger: "lpage"
     form: |
       alias:: 
       tags:: 
   
-  - trigger: "lperson"
+  - label: ""
+    trigger: "lperson"
     replace: |
       alias:: 
       tags:: [[person]]
       org:: 
       role:: 
   
-  - trigger: "lorg"
+  - label: ""
+    trigger: "lorg"
     form: |
       alias:: 
       tags:: 

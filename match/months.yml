@@ -4,62 +4,74 @@
 # @website https://quinnmchugh.net
 
 matches:
-  - trigger: "jan" 
+  - label: ""
+    trigger: "jan" 
     replace: "january"
     propagate_case: true
     word: true
 
-  - trigger: "feb" 
+  - label: ""
+    trigger: "feb" 
     replace: "february"
     propagate_case: true
     word: true
 
-  - trigger: "mar" 
+  - label: ""
+    trigger: "mar" 
     replace: "march"
     propagate_case: true
     word: true
 
-  - trigger: "apr" 
+  - label: ""
+    trigger: "apr" 
     replace: "april"
     propagate_case: true
     word: true
     
-  - trigger: "may" 
+  - label: ""
+    trigger: "may" 
     replace: "may"
     propagate_case: true
     word: true
 
-  - trigger: "jun" 
+  - label: ""
+    trigger: "jun" 
     replace: "june"
     propagate_case: true
     word: true
 
-  - trigger: "jul" 
+  - label: ""
+    trigger: "jul" 
     replace: "july"
     propagate_case: true
     word: true
 
-  - trigger: "aug" 
+  - label: ""
+    trigger: "aug" 
     replace: "august"
     propagate_case: true
     word: true
 
-  - trigger: "sep" 
+  - label: ""
+    trigger: "sep" 
     replace: "september"
     propagate_case: true
     word: true
 
-  - trigger: "oct" 
+  - label: ""
+    trigger: "oct" 
     replace: "october"
     propagate_case: true
     word: true
 
-  - trigger: "nov" 
+  - label: ""
+    trigger: "nov" 
     replace: "november"
     propagate_case: true
     word: true
     
-  - trigger: "dec" 
+  - label: ""
+    trigger: "dec" 
     replace: "december"
     propagate_case: true
     word: true

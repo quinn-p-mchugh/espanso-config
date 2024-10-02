@@ -4,8 +4,10 @@
 # @website https://quinnmchugh.net
 
 matches:
-  - trigger: ":meetupnetworking"
+  - label: ""
+    trigger: ":meetupnetworking"
     replace: "What kinds of networking opportunities are contained within these events?"
     
-  - trigger: ":slackjobs"
+  - label: ""
+    trigger: ":slackjobs"
     replace: "Within these Slack messages, what are all the job opportunities available? Group them by type please."

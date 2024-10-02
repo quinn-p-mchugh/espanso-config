@@ -7,9 +7,10 @@ imports:
   - "../sensitive_info.yml"
 
 matches:
-  - trigger: ":stillavail" 
+  - label: "Facebook (FB) Marketplace: Still Available"
+    trigger: ":stillavail" 
     form: |
-      Hi [[name]]!
+      Hi [[Name]]!
       
       Yup, this item is still available.
 

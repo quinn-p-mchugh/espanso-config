@@ -6,28 +6,32 @@
 # @website https://quinnmchugh.net/
 
 matches:
-  - trigger: ":success"
+  - label: ""
+    trigger: ":success"
     html: |
       <div class="callout callout--success">
         <h4 class="callout__work_title">This is a success callout</h4>
         <p>$|$</p>
       </div>
 
-  - trigger: ":info"
+  - label: ""
+    trigger: ":info"
     html: |
       <div class="callout callout--warning">
         <h4 class="callout__work_title">This is an info callout</h4>
         <p>$|$</p>
       </div>
 
-  - trigger: ":warning"
+  - label: ""
+    trigger: ":warning"
     html: |
       <div class="callout callout--warning">
         <h4 class="callout__work_title">This is a warning callout</h4>
         <p>And now I'm going to tell you something very important! Pay attention to me!</p>
       </div>
 
-  - trigger: ":danger"
+  - label: ""
+    trigger: ":danger"
     html: |
       <div class="callout callout--danger">
         <h4 class="callout__work_title">This is a caution callout</h4>

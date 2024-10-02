@@ -9,10 +9,12 @@ imports:
 matches:
 
   # Email
-  - trigger: ":fup" 
+  - label: ""
+    trigger: ":fup" 
     replace: "Just wanted to follow up on this in case it slipped by your inbox."
 
-  - trigger: ":missedmeeting"
+  - label: ""
+    trigger: ":missedmeeting"
     form: |
       Hi [[Name]],
 
@@ -24,6 +26,7 @@ matches:
 
     
   # Slack
-  - trigger: ":welcome" 
+  - label: ""
+    trigger: ":welcome" 
     replace: "Welcome [[name]]! :tada::tada::tada: Great to have you on board. :slightly_smiling_face:"
   

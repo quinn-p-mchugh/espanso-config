@@ -4,7 +4,8 @@
 # @website https://quinnmchugh.net
 
 matches:
-  - trigger: ":trig" 
+  - label: ""
+    trigger: ":trig" 
     replace: |
       - trigger: ""
           replace: ""

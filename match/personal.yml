@@ -7,116 +7,156 @@ imports:
   - "./sensitive_info.yml"
 
 matches:
-  - trigger: ":sig"
+  - label: ""
+    trigger: ":sig"
     replace: |
       All the best,
       {{first_name}}
       
-  - trigger: ":sig"
+  - label: ""
+    trigger: ":sig"
     replace: |
       Sincerely,
       {{first_name}}
 
-  - trigger: ":bookme"
+  - label: ""
+    trigger: ":bookme"
     html: |
       <a href="{{booking_page}}" target="_blank" rel="noopener noreferrer">{{booking_page}}</a>
 
   # Copied from sensitive_info.yml
-  - trigger: ":fn"
+  - label: ""
+    trigger: ":fn"
     replace: "{{first_name}}"
       
-  - trigger: ":ln"
+  - label: ""
+    trigger: ":ln"
     replace: "{{last_name}}"
 
-  - trigger: ":fulln"
+  - label: ""
+    trigger: ":fulln"
     replace: "{{full_name}}"
 
-  - trigger: ":pr"
+  - label: ""
+    trigger: ":pr"
     replace: "{{pronouns}}"
 
-  - trigger: ":fullnpr"
+  - label: ""
+    trigger: ":fullnpr"
     replace: "{{full_name_pronouns}}"
 
-  - trigger: ":st"
+  - label: ""
+    trigger: ":st"
     replace: "{{street_address}}"
 
-  - trigger: ":city"
+  - label: ""
+    trigger: ":city"
     replace: "{{city}}"
 
-  - trigger: ":state"
+  - label: ""
+    trigger: ":state"
     replace: "{{state}}"
 
-  - trigger: ":stateabb"
+  - label: ""
+    trigger: ":stateabb"
     replace: "{{state_abbreviation}}"
 
-  - trigger: ":zc"
+  - label: ""
+    trigger: ":zc"
     replace: "{{zip_code}}"
 
-  - trigger: ":add"
+  - label: ""
+    trigger: ":add"
     replace: "{{address}}"
 
-  - trigger: ":addurl"
+  - label: ""
+    trigger: ":addurl"
     replace: "{{address_url}}"
 
-  - trigger: ":email"
+  - label: ""
+    trigger: ":email"
     replace: "{{email}}"
 
-  - trigger: ":emailw"
+  - label: ""
+    trigger: ":emailw"
     replace: "{{email_work}}"
 
-  - trigger: ":ph"
+  - label: ""
+    trigger: ":ph"
     replace: "{{phone_mobile}}"
 
-  - trigger: ":bookpage"
+  - label: ""
+    trigger: ":bookpage"
     replace: "{{booking_page}}"
 
-  - trigger: ":website"
+  - label: ""
+    trigger: ":websiteurl"
     replace: "{{website_url}}"
 
-  - trigger: ":zot"
+  - label: ""
+    trigger: ":zot"
     replace: "{{library_url}}"
 
-  - trigger: ":resume"
+  - label: ""
+    trigger: ":resume"
     replace: "{{resume_url}}"
 
-  - trigger: ":feedback"
+  - label: ""
+    trigger: ":feedback"
     replace: "{{feedback_url}}"
 
-  - trigger: ":li"
+  - label: ""
+    trigger: ":li"
     replace: "{{linkedin_url}}"
 
-  - trigger: ":fb"
+  - label: ""
+    trigger: ":fb"
     replace: "{{facebook_url}}"
 
-  - trigger: ":twitter"
+  - label: ""
+    trigger: ":twitter"
     replace: "{{twitter_url}}"
 
-  - trigger: ":github"
+  - label: ""
+    trigger: ":github"
     replace: "{{github_url}}"
 
-  - trigger: ":instagram"
+  - label: ""
+    trigger: ":instagram"
     replace: "{{instagram_url}}"
 
-  - trigger: ":polarsteps"
+  - label: ""
+    trigger: ":polarsteps"
     replace: "{{polarsteps_url}}"
 
-  - trigger: ":gmeet"
+  - label: ""
+    trigger: ":gmeet"
     replace: "{{google_meet_url}}"
   
-  - trigger: ":jspost"
+  - label: ""
+    trigger: ":jspost"
     replace: "{{job_search_post}}"
       
-  - trigger: ":role"
+  - label: ""
+    trigger: ":role"
     replace: "{{work_role}}"
 
-  - trigger: ":org"
+  - label: ""
+    trigger: ":org"
     replace: "{{work_organization}}"
 
-  - trigger: ":title"
+  - label: ""
+    trigger: ":title"
     replace: "{{work_title}}"
 
-  - trigger: ":dept"
+  - label: ""
+    trigger: ":dept"
     replace: "{{work_dept}}"
 
-  - trigger: ":user_path"
+  - label: ""
+    trigger: ":user_path"
     replace: "{{user_path}}"
+
+  - label: ""
+    trigger: ":contact"
+    replace: "{{contact_card_url}}"

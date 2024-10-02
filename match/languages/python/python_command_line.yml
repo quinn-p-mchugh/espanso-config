@@ -6,7 +6,8 @@
 matches:
 
   # Create a new Python virtual environment, activate it, and install dependencies using requirements.txt
-  - trigger: ":penv"
+  - label: ""
+    trigger: ":penv"
     replace: |
       python -m venv .venv
       .venv\Scripts\activate.bat

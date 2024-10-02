@@ -1,0 +1,14 @@
+# Text expansions for common greetings.
+#
+# @author Quinn McHugh
+# @website https://quinnmchugh.net
+
+imports:
+  - "./personal.yml"
+
+matches:
+
+  # Birthdays
+  - label: ""
+    trigger: ":birthday" 
+    form: "Happy birthday [[FirstName]]!!! Hope you have a wonderful day. :)"

@@ -20,15 +20,19 @@ global_vars:
       format: "%+"
 
 matches:
-  - trigger: ":today"
+  - label: ""
+    trigger: ":today"
     replace: "{{dateiso}}"
     
-  - trigger: ":datetimeiso"
+  - label: ""
+    trigger: ":datetimeiso"
     replace: "{{datetimeiso}}"
   
   # Useful for writing timestamped meeting notes
-  - trigger: ":tm"
+  - label: ""
+    trigger: ":tm"
     replace: "{{time}} - $|$"
   
-  - trigger: ".tm"
+  - label: ""
+    trigger: ".tm"
     replace: "**{{time}}** - $|$"

@@ -8,5 +8,6 @@
 # @website https://quinnmchugh.net
 
 matches:
-  - trigger: ":lissue"
+  - label: ""
+    trigger: ":lissue"
     form: "issue in linkedIssues([[IssueKey]])"

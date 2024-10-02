@@ -4,18 +4,22 @@
 # @website https://quinnmchugh.net
 
 matches:
-  - trigger: ":sllogseq"
+  - label: ""
+    trigger: ":sllogseq"
     replace: 'mklink /J "{{user_path}}\.logseq" "{{user_path}}\Insync\{{email}}\Google Drive\100 Data\Logseq"'
 
-  - trigger: ":slrssguard"
+  - label: ""
+    trigger: ":slrssguard"
     replace: |
       mklink /J "C:\RSS Guard\data4\database" "{{user_path}}\Insync\{{email}}\Google Drive\100 Data\RSS Guard\database"
       mklink /J "C:\RSS Guard\data4\config" "{{user_path}}\Insync\{{email}}\Google Drive\100 Data\RSS Guard\config"
 
-  - trigger: ":sldoublecmd"
+  - label: ""
+    trigger: ":sldoublecmd"
     replace: |
       mklink /J "{{user_path}}\AppData\Roaming\doublecmd" "{{user_path}}\Insync\{{email}}\Google Drive\100 Data\Double Commander"
 
-  - trigger: ":slstretchly"
+  - label: ""
+    trigger: ":slstretchly"
     replace: |
       mklink /J "{{user_path}}\AppData\Roaming\Stretchly" "{{user_path}}\Insync\{{email}}\Google Drive\100 Data\Stretchly"

@@ -4,7 +4,8 @@
 # @website https://quinnmchugh.net
 
 matches:
-  - trigger: ":paste"
+  - label: ""
+    trigger: ":paste"
     replace: "{{clipboard}}"
     vars:
       - name: "clipboard"

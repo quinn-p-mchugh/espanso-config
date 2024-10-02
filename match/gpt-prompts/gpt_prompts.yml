@@ -4,7 +4,8 @@
 # @website https://quinnmchugh.net
 
 matches:
-  - trigger: ":ankigpt"
+  - label: "GPT: Create Anki cards from text"
+    trigger: ":ankigpt"
     replace: |
       I want you to act as a professional Anki card creator, able to create Anki cards from the text I provide.
 
@@ -28,7 +29,8 @@ matches:
 
       Please output the cards you create as markdown tables. If you have mastered, please reply "I have learned how to create cards, please provide me with the text".
 
-  - trigger: ":summarize"
+  - label: "GPT: Summarize clipboard text"
+    trigger: ":summarize"
     replace: |
       {{output}}
 
@@ -46,21 +48,25 @@ matches:
       - name: "clipboard"
         type: "clipboard"
 
-  - trigger: ":gptemoji"
+  - label: ""
+    trigger: ":gptemoji"
     replace: |
       You are a professional emoji picker, responsible for giving me several emoji ideas for the following description:
 
       $|$
 
-  - trigger: ":meetsummary"
+  - label: ""
+    trigger: ":meetsummary"
     replace: |
       ChatGPT, from this point forward, do not respond to any of my prompts unless I precede them with 'respond now'. Please exclude all fluff, disclaimers, and warnings in your responses. Strictly adhere to this behavior until instructed otherwise. Additionally, I require you to summarize the following transcript, incorporating details about attendees, key topics, action items, and next steps.
 
-  - trigger: ":gptsocial"
+  - label: ""
+    trigger: ":gptsocial"
     replace: |
       I want you to act as a social media manager. You will craft engaging, though-provoking, and highly shareable social media posts for various platforms, such as LinkedIn, Twitter, and Mastodon. Each post you create should provide a positive impression. Please create several post options, based on the following content:
 
-  - trigger: ":gptcoverletter"
+  - label: ""
+    trigger: ":gptcoverletter"
     replace: |
       Imagine you're a professional cover letter writing assistant. I want you to generate cover letters based on your knowledge and the attached resume.
 
@@ -68,6 +74,7 @@ matches:
       1. Knowledge with "example" in the file name should only be used as inspiration for prose, grammar, tone, and cohesion.
       2. Files with "Quinn.McHugh" in the file name contains content of previously written cover letters. You should emulate the voice of these cover letters and are encouraged to utilize the language and content contained in these files.
 
-  - trigger: ":gptjformat"
+  - label: ""
+    trigger: ":gptjformat"
     replace: "Please fix the formatting of the following text. Be sure to include all details and keep content as accurate as possible:"
 

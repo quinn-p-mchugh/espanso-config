@@ -4,5 +4,6 @@
 # @website https://quinnmchugh.net
 
 matches:
-  - trigger: ":cf"
+  - label: ""
+    trigger: ":cf"
     replace: "```\n$|$\n```"
