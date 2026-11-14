@@ -1,0 +1,11 @@
+# Text expansions for Zotero.
+#
+# @author Quinn McHugh
+# @website https://quinnmchugh.net
+
+matches:
+
+  # Commands below should be run via Tools -> Developer -> Run JavaScript
+  - label: "Select random item in current collection"
+    trigger: ":zot" 
+    replace: "var iv = Zotero.getActiveZoteroPane().itemsView; await iv.selectItem(iv.getRow(Zotero.Utilities.rand(0, iv.rowCount - 1)).id)"
