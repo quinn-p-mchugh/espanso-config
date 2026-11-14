@@ -8,16 +8,16 @@ imports:
 
 matches:
   - label: "Facebook (FB) Marketplace: Still Available"
-    trigger: ":stillavail" 
+    trigger: ":fbstillavail" 
     form: |
       Hi [[Name]]!
       
       Yup, this item is still available.
 
-      Porch pickup. First come, first served.
+      Porch pickup.
 
       Address is:
       {{address}}
       {{address_url}}
 
-      Let me know when you plan on swinging by, so I can put it out on the porch.
+      Let me know when you plan on coming by. Otherwise, I will move onto others who are interested.
