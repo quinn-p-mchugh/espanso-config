@@ -6,46 +6,46 @@
 # @website https://quinnmchugh.net/
 
 matches:
-  - label: ""
-    trigger: ":dnote"
+  - label: "Note (Docusaurus)"
+    trigger: ":dsaur"
     replace: |
-      :::note
+      :::note[]
 
       $|$
       
       :::
 
-  - label: ""
-    trigger: ":dinfo"
+  - label: "Info (Docusaurus)"
+    trigger: ":dsaur"
     replace: |
-      :::info
+      :::info[]
 
       $|$
       
       :::
 
-  - label: ""
-    trigger: ":dtip"
+  - label: "Tip (Docusaurus)"
+    trigger: ":dsaur"
     replace: |
-      :::tip
+      :::tip[]
 
       $|$
       
       :::
 
-  - label: ""
-    trigger: ":dwarning"
+  - label: "Warning (Docusaurus)"
+    trigger: ":dsaur"
     replace: |
-      :::warning
+      :::warning[]
 
       $|$
       
       :::
 
-  - label: ""
-    trigger: ":ddanger"
+  - label: "Danger (Docusaurus)"
+    trigger: ":dsaur"
     replace: |
-      :::danger
+      :::danger[]
       $|$
       
       :::
