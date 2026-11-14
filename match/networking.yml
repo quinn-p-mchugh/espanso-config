@@ -1,0 +1,51 @@
+# Text expansions related to networking
+#
+# @author Quinn McHugh
+# @website https://quinnmchugh.net
+
+imports:
+  - "./sensitive_info.yml"
+
+matches:
+
+  # Cold Messaging
+  - label: ""
+    trigger: ":coldmessage1"
+    form: |
+      Hi [[Name]]! I was surprised to see so many Philadelphia natives at the Emerging Practitioners today - maybe it's just our general dissatisfaction with the city's political system. 🤭 Hope you got some great insight from your session!
+
+      I'd love to get your career advice for 15-20 minutes. I’m a systems-minded project manager and mechanical engineer with a deepening interest in change management, organizational design, and group facilitation and am currently trying to figure out how I might blend these interests with my technical background. Given your extensive background in the field, I was hoping to pick your brain on what your day-to-day work looks like at  Remington & Vernick Engineers and if there's any advice you would give yourself if you were to go into organizational development again. I'd especially love to learn about your org development philosophy and how your experience as a data & marketing analyst has informed your present work.
+
+      I can meet you for coffee, or wherever is most convenient. What do you think?
+
+  - label: ""
+    trigger: ":coldmessage2"
+    form: |
+      Hi [[Name]],
+
+      I hope this message finds you well!
+
+      My name is {{first_name}}, and I'm an early career project manager and mechanical engineer with a growing fascination with change management, organizational design, and group facilitation. I found your profile through the National Coalition for Dialogue & Deliberation's (NCDD) member directory while reading a book about collaborative technology and democracy on plurality.net.
+
+      I'd love to get your career advice for 15-20 minutes. I'm currently trying to figure out the next right step in my career and am excited by the idea of becoming either a chief of staff or organizational change consultant, like yourself. Given your extensive experience in the field, I was hoping to pick your brain on what your day-to-day work looks like and if there's any advice you would give your past self if you were to go into organizational development again. I’d especially love to understand what influenced you pivot into organizational development & leadership after your in journalism and communications.
+
+      I can meet you for coffee, over video, or wherever is most convenient. What do you think? 
+
+      Best regards,
+      {{first_name}}
+
+  - label: ""
+    trigger: ":coldmessage3"
+    form: |
+      Hi [[Name]]! 
+
+      We connected after I joined SME when I was working as a Manufacturing Engineer in 2021. I adore how refreshingly candid your profile is ("Extensively researched the effectiveness of knowledge management… the study ultimately determined that The Boeing Company had little to no interest in maintaining both the experiential and tacit knowledge of their engineers.") and it seems we share a mutual interest in engineering, knowledge management, and organizational effectiveness.
+
+      I'd love to get your career advice for 15-20 minutes. I’m a systems-minded project manager and mechanical engineer with a growing passion for change management and organizational behavior. Currently, I'm actively looking to secure a customer-facing engineering role where I can further hone my technical communication and stakeholder management skills while deepening my interests in these areas.
+
+      Given your extensive background in manufacturing, engineering, and program management, I was hoping to pick your brain on how you transitioned from being an engineering individual contributor to more strategic, program-level work and if there's any advice you would give yourself if you were to start again. I'd especially love to learn about your org development philosophy and your perspective on the "why" behind the lack of adoption of good knowledge management practices in engineering contexts.
+
+      Would it be possible for us to meet?
+
+      Best regards,
+      {{first_name}}
