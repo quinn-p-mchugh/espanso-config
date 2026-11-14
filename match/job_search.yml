@@ -6,28 +6,103 @@
 imports:
   - "./sensitive_info.yml"
 
+global_vars:
+  - name: experience_pitch
+    type: echo
+    params:
+      echo: As a CAPM-certified mechanical engineer & software developer, I offer 5+ years of experience delivering tailored technical solutions, driving exceptional customer experiences, and streamlining operations in manufacturing & industrial automation. Previously, I've worked as an applications engineer for FORT Robotics, and also possess hands-on experience as a manufacturing and project engineer.
+
 matches:
 
   # Recruiter / Job Inquiries
-  - trigger: ":recruiterno"
+  - label: ""
+    trigger: ":recruiterno"
     form: |
       Hi [[Name]]!
 
-      Thank you for reaching out about the [[Role]] position in [[Location]]. I'm currently in an active job search and while this position doesn't seem to be well-aligned with my skills and experience, I'd be more than happy to chat more about other openings that are a better fit.
+      Thank you for reaching out about the [[Role]] position in [[Location]]. I'm currently in an active job search and while this position doesn't seem to be fully aligned with my skills and experience, I'd love to discuss other openings that are a better fit.
 
-      I'm currently exploring opportunities in the following areas:
-      • Project Management/Coordination
-      • Systems Analysis/Engineering
-      • Process Improvement Engineering
-      • Business Systems Management
+      {{experience_pitch}}
 
-      You can find a PDF of my resume here:
-      {{resume_url}}
+      Currently, I'm pursuing 𝗰𝘂𝘀𝘁𝗼𝗺𝗲𝗿-𝗳𝗮𝗰𝗶𝗻𝗴 𝗲𝗻𝗴𝗶𝗻𝗲𝗲𝗿𝗶𝗻𝗴 𝗿𝗼𝗹𝗲𝘀 in the following areas and would be especially excited about roles in 𝗰𝗹𝗲𝗮𝗻 𝘁𝗲𝗰𝗵:
+      • Sales Engineering
+      • Applications Engineering
+      • Solutions Engineering
+      • Field Engineering
+      • Technical Account Management
+      • Customer Success / Post-Sales Support
 
-      And my availability here:
-      {{booking_page}}
+      If any of these roles match positions you're recruiting for, I'd love to chat. Please feel free to call me at {{phone_mobile}} or schedule a time at my booking page: {{booking_page}}. You may also save my contact info for future reference: {{contact_card_url}}
 
-  - trigger: ":recruiteryes"
+      I've attached my resume for your reference, and the most up-to-date version can be accessed here: {{resume_url}}
+
+      Finally, if any relevant roles arise in the future, I'd be grateful if you could forward them to my email at {{email}}.
+
+      Thank you again, and I look forward to the possibility of connecting further!
+
+  - label: ""
+    trigger: ":recruiterfu1"
+    form: |
+      Hi [[Name]]!
+
+      I hope this message finds you well. I just wanted to follow up on the above in case my message slipped by your inbox. It sounds like a fantastic opportunity and I'd love the chance to chat further.
+
+  - label: ""
+    trigger: ":recruiterfu2"
+    form: |
+      Hi [[Name]],
+      
+      Just following up on this one last time - has the above position been filled? 
+      
+      I'd hate to keep bothering you about this, so let me know with a brief yes or no!
+
+      Thanks again and I hope we can connect in the future.
+
+
+  - label: ""
+    trigger: ":recruitercold"
+    form: |
+      Hi [[Name]],
+
+      How's your summer going? This is {{first_name}}, from our previous conversation about a Mechanical Engineering position back in April.
+
+      I'm still actively searching for new opportunities and was hoping to enlist your help. I've adjusted my search strategy and am now eager to secure a customer-facing engineering role where I can leverage my 4+ years of experience as a mechanical engineer, software developer, and project manager to deliver tailored technical solutions that delight customers, drive operational excellence, and generate outstanding results. Previously, I worked as a manufacturing engineer in the vacuum instrumentation industry, an applications engineer in the robotics and automation industry, and have taken on various project and product management roles as a consultant.
+
+      Currently, I'm pursuing opportunities in Sales Engineering, Solutions Engineering, Applications Engineering, or Project Management within mid-sized companies (50-1000 people). Remote is preferable, but open to hybrid and on-site work here in Philadelphia, New York City, or Washington, DC.
+
+      May I send you my updated resume?
+
+      Best regards,
+      {{first_name}}
+
+  - label: ""
+    trigger: ":positionclosed"
+    form: |
+      Hey [[Name]],
+
+      No worries at all - if any other opportunities come your way, please do reach out.
+
+      If you ever need to chat, please feel free to call me at {{phone_mobile}} or schedule a time to chat via {{booking_page}}.
+
+      You can also save my contact info for quick reference: {{contact_card_url}}
+
+      Wishing you a successful search and looking forward to keeping in touch!
+
+
+  - label: ""
+    trigger: ":recruiterresumesend"
+    form: |
+      Hi [[Name]],
+
+      Wonderful! Thank you so much for offering your support. I've attached a PDF of my resume to this message. You can always find the most up-to-date version here: {{resume_url}}
+
+      If you ever need to chat, please feel free to call me at {{phone_mobile}} or schedule a time via my booking page: {{booking_page}}. You can also save my contact info for quick reference: {{contact_card_url}}
+
+      Thank you again for your help and I look forward to staying in touch!
+
+
+  - label: ""
+    trigger: ":recruiteryes"
     form: |
       Hi [[Name]]!
 
@@ -35,7 +110,7 @@ matches:
 
       Please feel free to call me at {{phone_mobile}} - my general availability can be found here: {{booking_page}}
       
-      I've attached a PDF of my resume to this message. You can find the most up-to-date version here: {{resume_url}}
+      I've attached a PDF of my resume to this message. You can always find the most up-to-date version here: {{resume_url}}
 
       Finally, if you happen to have additional details about the role, you're welcome to forward them to my email at {{email}}.
 
@@ -75,4 +150,22 @@ matches:
     trigger: ":lihmconnect" # Note to accompany a Linked connection request to the hiring manager after being rejected from a role.
     form: |
       Hi [[Name]], it was a pleasure discussing the [[Role]] role at [[Organization]] with you. I'd love to stay connected, should any future opportunities arise within [[Organization]] or elsewhere.
+
+  - label: "Job Search LinkedIn Update"
+    trigger: ":jsupdate"
+    form: |
+      💼 𝗪𝗲𝗲𝗸𝗹𝘆 𝗝𝗼𝗯 𝗦𝗲𝗮𝗿𝗰𝗵 𝗨𝗽𝗱𝗮𝘁𝗲: Week #[[WeekNumber]]
+
+      Insights:
+
+  - label: "First Round Interview Scheduling Reply"
+    trigger: ":interviewreply"
+    form: |
+      💼 𝗪𝗲𝗲𝗸𝗹𝘆 𝗝𝗼𝗯 𝗦𝗲𝗮𝗿𝗰𝗵 𝗨𝗽𝗱𝗮𝘁𝗲: Week #[[WeekNumber]]
+
+      Insights:
+
+      
+
+
 
