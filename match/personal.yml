@@ -106,31 +106,31 @@ matches:
     replace: "{{feedback_url}}"
 
   - label: ""
-    trigger: ":li"
+    trigger: ":myli"
     replace: "{{linkedin_url}}"
 
   - label: ""
-    trigger: ":fb"
+    trigger: ":myfb"
     replace: "{{facebook_url}}"
 
   - label: ""
-    trigger: ":twitter"
+    trigger: ":mytwitter"
     replace: "{{twitter_url}}"
 
   - label: ""
-    trigger: ":github"
+    trigger: ":mygithub"
     replace: "{{github_url}}"
 
   - label: ""
-    trigger: ":instagram"
+    trigger: ":myinstagram"
     replace: "{{instagram_url}}"
 
   - label: ""
-    trigger: ":polarsteps"
+    trigger: ":mypolarsteps"
     replace: "{{polarsteps_url}}"
 
   - label: ""
-    trigger: ":gmeet"
+    trigger: ":mygmeet"
     replace: "{{google_meet_url}}"
   
   - label: ""
